@@ -1,41 +1,81 @@
 body {
-    height: 75vh;
+    height: 80vh;
     background: url(./img/pozadina.jpg) no-repeat center center/cover;
-}
-
-.container {
-    display: flex;
-    width: 60%;
-    margin: 200px auto;
+    font-family: 'Poiret One', cursive;
 }
 
 .okvir {
-    flex: 1;
-    height: 400px;
-    background-color: #fb9a9a;
+    width: 30%;
     border: 2px solid #fb2237;
-    margin: 2rem;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
+    margin: 150px auto;
+    padding: 2rem;
+    font-weight: bolder;
 }
 
-.okvir h1 {
-    flex:1;
-    text-align: center;
-    font-size: 4rem;
-    margin: 1rem;
-}
-
-.okvir h3 {
-    flex:1;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.okvir input {
-    flex:1;
+.kontejnerek {
     width: 50%;
-    margin: 0 auto;
-    font-size: 4rem;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.input {
+    font-size: 1.5rem;
+}
+
+.input h1, .input p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.input input, .input select {
+    font-size: 1.8rem;
+    font-family: 'Poiret One', cursive;
+}
+
+.input input {
+    width: 180px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.okvir h2{
+    display: inline;
+}
+
+.output {
+    font-size: 1.5rem;
+}
+
+.output p {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.output select {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    font-family: 'Poiret One', cursive;
+}
+
+#gumb {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 50%;
+    border: 2px solid #fb2237;
+    font-size: 1.5rem;
+    color: #fb2237;
+    font-family: 'Poiret One', cursive;
+}
+
+#gumb:hover {
+    color: #fff;
+    background-color: #fb2237;
+}
+
+.ispis {
+    height: 150px;
 }
