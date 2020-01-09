@@ -5,10 +5,10 @@ body {
 }
 
 .okvir {
-    width: 30%;
+    width: 33%;
     border: 2px solid #fb2237;
     margin: 150px auto;
-    padding: 2rem;
+    padding: 1rem;
     font-weight: bolder;
 }
 
@@ -76,6 +76,7 @@ body {
     background-color: #fb2237;
 }
 
-.ispis {
-    height: 150px;
+#ispis {
+    height: 80px;
+    padding: 2rem;
 }

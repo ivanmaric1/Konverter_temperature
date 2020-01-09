@@ -9,31 +9,33 @@
     <title>Konverter temperature</title>
 </head>
 <body>
-    <div class="okvir">
-        <div class="input">
-            <h1>Konverter temperature</h1>
-            <p>Unesite iznos i mjernu jedinicu koju želite konvertirati</p>
-            <div class="flex kontejnerek">
-                <input type="text" placeholder="Unesite broj">
-                <select name="mjernaJedinica" id="mjernaJedinica">
+    <form id='forma'>
+        <div class="okvir">
+            <div class="input">
+                <h1>Konverter temperature</h1>
+                <p>Unesite iznos i mjernu jedinicu koju želite konvertirati</p>
+                <div class="flex kontejnerek">
+                    <input type="text" placeholder="Unesite broj" id='brojka'>
+                    <select name="mjernaJedinica" id="Ulaz">
+                        <option value="cel">Celsius</option>
+                        <option value="far">Fahrenheit</option>
+                        <option value="kel">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="output kontejnerek">
+                <p>pretvori u</p> <select name="mjernaJedinica" id="Izlaz">
                     <option value="cel">Celsius</option>
                     <option value="far">Fahrenheit</option>
                     <option value="kel">Kelvin</option>
                 </select>
             </div>
-        </div>
+            <button type="submit" id='gumb'>Konvertiraj</button>
 
-        <div class="output kontejnerek">
-            <p>pretvori u</p> <select name="mjernaJedinica" id="mjernaJedinica">
-                <option value="cel">Celsius</option>
-                <option value="far">Fahrenheit</option>
-                <option value="kel">Kelvin</option>
-            </select>
+            <div id="ispis"></div>
         </div>
-        <button type="submit" id='gumb'>Konvertiraj</button>
-
-        <div class="ispis"></div>
-    </div>
+    </form>
 <script src='program.js'></script>
 </body>
 </html>
